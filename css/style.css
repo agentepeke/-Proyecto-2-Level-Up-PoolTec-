@@ -1,0 +1,97 @@
+:root {
+    --principal: #b8b8b8;
+    --secundario: #0588f5;
+    --tercero: #023255;
+    --fuentePrincipal:'Bebas Neue', cursive; 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /**GLOBALES**/
+  body{
+      background-color: var(--principal);
+      font-size: 1.6rem;
+      line-height: 1.5;
+
+  }
+  p{
+      font-size: 1.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--secundario);
+  }
+  .contenedorPrincipal{
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .contenedorContador{
+    text-align: center;
+  }
+  .contenedorSecundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: calc(33.3% - 1rem);
+}
+span{
+    font-size: 5rem;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+
+}
+  h1, h2, h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/**FOOTER**/
+.footer{
+    background-color: var(--secundario);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer__texto{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--principal);
+  }
+
+  /** Boton **/
+  button {
+    display: block;
+    font-family: var(--fuentePrincipal);
+    color: var(--principal);
+    background-color: var(--secundario);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--tercero);
+}
